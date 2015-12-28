@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Example App" default="build">
+  <property file="build.properties"/>
+  <description>Example application.</description>
+  <tstamp><format property='build.time' pattern='yyyy-MM-dd HH:mm:ss'/></tstamp>
+  <echo>
+    Application: ${app.name} ${app.version}
+    Site name: ${site.name}
+    Build File : ${ant.file} 
+    Run Date   : ${build.time}
+    Run by     : ${user.name}
+    Base Dir   : ${basedir}
+    Build Dir  : ${workspace.build}
+  </echo>
+  <import file="php/php.xml"></import>
+  <target name="build" description="Build application." depends="php.phpdoc">
+    <echo>Building application.</echo>
+  </target>
+</project>
