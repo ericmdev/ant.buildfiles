@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <target name="phpdoc" description="Generate API documentation using phpDoc.">
+  <target name="phpdoc" description="Generate API documentation using phpDocumentor.">
     <exec executable="phpdoc">
       <arg line="-d '${workspace.src}' -t '${workspace.build}/docs' --title='Tempo' " />
     </exec>
