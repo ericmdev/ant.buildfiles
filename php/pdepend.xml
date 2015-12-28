@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <target name="pdepend" description="Calculate software metrics using PHP_Depend">
+    <exec executable="pdepend">
+      <arg value="--jdepend-xml=${workspace.build}/logs/jdepend.xml" />
+      <arg value="--jdepend-chart=${workspace.build}/pdepend/dependencies.svg" />
+      <arg value="--overview-pyramid=${workspace.build}/pdepend/overview-pyramid.svg" />
+      <arg path="${workspace.src}" />
+    </exec>
+  </target>
+</project>
+
