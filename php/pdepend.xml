@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <target name="pdepend" description="Calculate software metrics using PHP_Depend">
+  <target name="pdepend" description="Calculate software metrics using PDepend.">
     <exec executable="pdepend">
       <arg value="--jdepend-xml=${workspace.build}/logs/jdepend.xml" />
       <arg value="--jdepend-chart=${workspace.build}/pdepend/dependencies.svg" />
