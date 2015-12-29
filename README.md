@@ -1,10 +1,8 @@
-Ant: Tasks
-==========
+## Ant: Tasks
 
 Ant tasks for build.xml files.
 
-Usage
------
+### Usage
 
 Clone repo:
     
