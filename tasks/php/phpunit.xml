@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <target name="phpunit" description="Run unit tests with PHPUnit.">
+    <exec executable="phpunit" failonerror="true">
+      <arg value="-c" /> 
+      <arg path="${files.phpunit.xml}" />
+    </exec>
+  </target>
+</project>
