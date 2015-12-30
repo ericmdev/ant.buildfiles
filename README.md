@@ -1,13 +1,18 @@
 ## Ant: Tasks
 
-[Ant](http://ant.apache.org/) **tasks** for building PHP and JS apps.
+[Ant](http://ant.apache.org/) **tasks** for building PHP and JavaScript applications.
+
+### Installation
+
+Acquire .phar files for PHP tasks.
+    
+    $ sh ./install.sh
+
 
 ### Usage
 
-Clone repo:
-    
-    $ git clone <repo> ./ant
+Edit `build.xml` as required.
 
-Run ant:
+Execute Ant targets:
 
-    $ ant build
+    $ ant [[target]]
