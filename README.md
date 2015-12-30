@@ -4,10 +4,9 @@
 
 ### Installation
 
-Acquire .phar files for PHP tasks.
+Acquire Phar archives for PHP tasks.
     
     $ sh ./install.sh
-
 
 ### Usage
 
