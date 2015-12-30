@@ -1,8 +1,8 @@
-### Ant: Tasks
+## Ant: Tasks
 
 [Ant](http://ant.apache.org/) **tasks** for building PHP and JavaScript applications.
 
-#### Usage
+### Usage
 
 Edit `build.xml` as required.
 
