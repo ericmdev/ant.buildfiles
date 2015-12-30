@@ -1,6 +1,6 @@
-## Ant: Build Files
+## Ant: Tasks
 
-[Ant](http://ant.apache.org/) **build files** for PHP & JS projects.
+[Ant](http://ant.apache.org/) **tasks** for building PHP & JS apps.
 
 ### Usage
 
