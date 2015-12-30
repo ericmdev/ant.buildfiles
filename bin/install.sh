@@ -6,6 +6,7 @@ echo $bin
 pdepend=$bin/phpDocumentor.phar
 phpdoc=$bin/phpDocumentor.phar
 phpmd=$bin/phpmd.phar
+phpcb=$bin/phpcb.phar
 
 # Acquire pdepend.
 if [ ! -f $pdepend ]; then
@@ -19,8 +20,14 @@ if [ ! -f $phpdoc ]; then
   chmod +x $phpdoc
 fi
 
-# Acquire phpmd.phar
+# Acquire phpmd.phar.
 if [ ! -f $phpmd ]; then
   wget -c http://static.phpmd.org/php/latest/phpmd.phar -P $bin
   chmod +x $phpmd
+fi
+
+# Acquire phpcb.phar.
+if [ ! -f $phpcb ]; then
+  wget -c https://github.com/bytepark/php-phar-qatools/raw/master/phpcb.phar -P $bin
+  chmod +x $phpcb
 fi
