@@ -1,6 +1,6 @@
 ## Ant: Tasks
 
-Ant tasks for build.xml files.
+Ant build files for PHP & JS projects.
 
 ### Usage
 

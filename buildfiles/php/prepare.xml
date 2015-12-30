@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <target name="prepare" depends="php.clean" description="Prepare for build">
+    <echo message='Prepare build directory, and its subdirectories.'/>
+    <mkdir dir="${workspace.build}/api"/>
+    <mkdir dir="${workspace.build}/code-browser"/>
+    <mkdir dir="${workspace.build}/coverage"/>
+    <mkdir dir="${workspace.build}/logs"/>
+    <mkdir dir="${workspace.build}/pdepend"/>
+  </target>
+ </project>
+ 
