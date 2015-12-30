@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project name="php" basedir="." default="build">
-  <dirname property="module.basedir" file="${ant.file.php}"/>
-  <import file="${module.basedir}/phpdoc.xml"></import>
-  <import file="${module.basedir}/pdepend.xml"></import>
-</project>

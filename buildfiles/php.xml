@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Set project name, basedir and default target. -->
+<project name="php" basedir="." default="build">
+
+  <!-- Import files. -->
+  <import file="php/clean.xml"></import>
+  <import file="php/lint.xml"></import>
+  <import file="php/pdepend.xml"></import>
+  <import file="php/phpcs.xml"></import>
+  <import file="php/phpdoc.xml"></import>
+  <import file="php/prepare.xml"></import>
+
+  <!-- Build target. -->
+  <target name="build"
+  depends="clean,prepare,lint,pdepend,phpcs,phpdoc"/>
+
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <target name="clean" description="Cleanup build artifacts">
+    <delete dir="${workspace.build}/api"/>
+    <delete dir="${workspace.build}/code-browser"/>
+    <delete dir="${workspace.build}/coverage"/>
+    <delete dir="${workspace.build}/logs"/>
+    <delete dir="${workspace.build}/pdepend"/>
+    <delete dir="${workspace.build}/docs/*"/>
+  </target>
+ </project>
+ 
