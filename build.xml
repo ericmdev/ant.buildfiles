@@ -24,7 +24,7 @@
   </echo>
 
   <!-- Import build files. -->
-  <import file="buildfiles/php.xml"></import>
+  <import file="tasks/php.xml"></import>
 
   <!-- Build target. -->
   <target name="build-php" description="Build PHP application." depends="php.build">
