@@ -2,7 +2,7 @@
 <project>
   <target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser.">
     <exec executable="php" failonerror="true">
-      <arg value="${files.phpcb.phar}" />
+      <arg value="${phpcb.phar}" />
       <arg value="--log" />
       <arg path="${workspace.build}/logs" />
       <arg value="--source" />
