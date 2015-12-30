@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Example App" default="build">
+
+<!-- Set project name, basedir and default target. -->
+<project name="Example Application" default="build-php">
+
+  <!-- Import build properties. -->
   <property file="build.properties"/>
+
+  <!-- Set project description. -->
   <description>Example application.</description>
+
+  <!-- Set build time property. -->
   <tstamp><format property='build.time' pattern='yyyy-MM-dd HH:mm:ss'/></tstamp>
+
+  <!-- Echo build information. -->
   <echo>
     Application: ${app.name} ${app.version}
     Site name: ${site.name}
@@ -12,8 +22,13 @@
     Base Dir   : ${basedir}
     Build Dir  : ${workspace.build}
   </echo>
-  <import file="php/php.xml"></import>
-  <target name="build" description="Build application." depends="php.phpdoc">
-    <echo>Building application.</echo>
+
+  <!-- Import build files. -->
+  <import file="buildfiles/php.xml"></import>
+
+  <!-- Build target. -->
+  <target name="build-php" description="Build PHP application." depends="php.phpdoc">
+    <echo>Building PHP application.</echo>
   </target>
+
 </project>
