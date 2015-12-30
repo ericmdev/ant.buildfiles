@@ -6,7 +6,7 @@
 
 Acquire .phar files for PHP tasks:
     
-    $ sh ./bin/install.sh
+    $ sh ./install.sh
 
 
 ### Usage
