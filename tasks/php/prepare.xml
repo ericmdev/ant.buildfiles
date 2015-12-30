@@ -8,5 +8,5 @@
     <mkdir dir="${workspace.build}/logs"/>
     <mkdir dir="${workspace.build}/pdepend"/>
   </target>
- </project>
+</project>
  

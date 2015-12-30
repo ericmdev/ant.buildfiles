@@ -1,6 +1,6 @@
 ## Ant: Tasks
 
-[Ant](http://ant.apache.org/) **tasks** for building PHP & JS apps.
+[Ant](http://ant.apache.org/) **tasks** for building PHP and JS apps.
 
 ### Usage
 

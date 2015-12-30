@@ -7,12 +7,14 @@
   <import file="php/clean.xml"></import>
   <import file="php/lint.xml"></import>
   <import file="php/pdepend.xml"></import>
+  <import file="php/phpcb.xml"></import>
   <import file="php/phpcs.xml"></import>
   <import file="php/phpdoc.xml"></import>
+  <import file="php/phpunit.xml"></import>
   <import file="php/prepare.xml"></import>
 
   <!-- Build target. -->
   <target name="build"
-  depends="clean,prepare,lint,pdepend,phpcs,phpdoc"/>
+  depends="clean,prepare,lint,phpunit,pdepend,phpcs,phpdoc,phpcb"/>
 
 </project>
