@@ -1,6 +1,6 @@
 ## Ant: Tasks
 
-Ant targets for building PHP & JS projects.
+Ant build files for PHP & JS projects.
 
 ### Usage
 

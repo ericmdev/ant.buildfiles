@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Set project name, basedir and default target. -->
+<project name="php" basedir="." default="build">
+
+  <!-- Import files. -->
+  <import file="php/phpdoc.xml"></import>
+
+</project>
