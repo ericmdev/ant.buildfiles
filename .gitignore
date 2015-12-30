@@ -1,3 +1,4 @@
-/example/build/
+/bin/
 /tmp/
+/example/build/
 *cache.properties
