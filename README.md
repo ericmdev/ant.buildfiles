@@ -4,6 +4,6 @@
 
 ### Usage
 
-Execute Ant targets:
+Edit `build.xml` as required, then run:
 
-    $ ant build
+    $ ant [[target]]
