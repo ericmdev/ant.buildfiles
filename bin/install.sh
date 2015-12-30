@@ -5,6 +5,7 @@ echo $bin
 # Define files.
 pdepend=$bin/phpDocumentor.phar
 phpdoc=$bin/phpDocumentor.phar
+phpmd=$bin/phpmd.phar
 
 # Acquire pdepend.
 if [ ! -f $pdepend ]; then
@@ -16,4 +17,10 @@ fi
 if [ ! -f $phpdoc ]; then
   wget http://www.phpdoc.org/phpDocumentor.phar -P $bin
   chmod +x $phpdoc
+fi
+
+# Acquire phpmd.phar
+if [ ! -f $phpmd ]; then
+  wget -c http://static.phpmd.org/php/latest/phpmd.phar -P $bin
+  chmod +x $phpmd
 fi
