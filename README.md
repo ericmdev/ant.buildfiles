@@ -12,6 +12,6 @@ Acquire Phar archives for PHP tasks.
 
 Edit `build.xml` as required.
 
-Execute Ant targets:
+Execute Ant targets as a superuser:
 
-    $ ant [[target]]
+    $ sudo ant [[target]]
