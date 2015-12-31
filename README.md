@@ -6,6 +6,7 @@ PHP QA tools:
 
 - [PDepend](http://pdepend.org/)
 - [PHP_CodeBrowser](https://github.com/Mayflower/PHP_CodeBrowser)
+- [PHPCPD](https://github.com/sebastianbergmann/phpcpd)
 - [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
 - [phpDocumentor](http://www.phpdoc.org/)
 - [PHPMD](http://phpmd.org/)
@@ -16,7 +17,7 @@ PHP QA tools:
 
 Acquire Phar archives for PHP tasks.
     
-    $ sh ./install.sh
+    $ sh ./bin/install.sh
 
 ### Usage
 
