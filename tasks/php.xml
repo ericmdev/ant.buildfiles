@@ -10,12 +10,13 @@
   <import file="php/phpcb.xml"></import>
   <import file="php/phpcs.xml"></import>
   <import file="php/phpdoc.xml"></import>
+  <import file="php/phploc.xml"></import>
   <import file="php/phpmd.xml"></import>
   <import file="php/phpunit.xml"></import>
   <import file="php/prepare.xml"></import>
 
   <!-- Build target. -->
   <target name="build"
-  depends="clean,prepare,lint,phpunit,pdepend,phpmd,phpcs,phpdoc,phpcb"/>
+  depends="clean,prepare,lint,phpunit,pdepend,phpmd,phpcs,phpdoc,phploc,phpcb"/>
 
 </project>
