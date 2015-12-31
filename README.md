@@ -17,7 +17,7 @@ PHP QA tools:
 
 Acquire Phar archives for PHP tasks.
     
-    $ sh ./install.sh
+    $ sh ./bin/install.sh
 
 ### Usage
 
