@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
   <target name="phpcs" description="Find coding standard violations using PHP_CodeSniffer and print human readable output. Intended for usage on the command line before committing.">
-    <exec executable="phpcs" output="/dev/null">
+    <exec executable="php">
+      <arg value="${phpcs.phar}" />
       <arg value="--report=checkstyle" />
       <arg value="--report-file=${workspace.build}/logs/checkstyle.xml" />
       <arg path="${workspace.src}" />

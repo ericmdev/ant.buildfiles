@@ -1,4 +1,11 @@
-/bin/
+# Phar archives.
+/bin/*.phar
+
+# Tmp directory.
 /tmp/
+
+# Example build directory.
 /example/build/
+
+# Cache properties.
 *cache.properties
