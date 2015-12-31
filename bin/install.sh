@@ -1,33 +1,33 @@
-# Define bin directory.
+# Set bin directory.
 bin=$(dirname $0)
 echo $bin
 
-# Define files.
-pdepend=$bin/phpDocumentor.phar
-phpdoc=$bin/phpDocumentor.phar
-phpmd=$bin/phpmd.phar
-phpcb=$bin/phpcb.phar
-
 # Acquire pdepend.
-if [ ! -f $pdepend ]; then
+if [ ! -f $bin/phpDocumentor.phar ]; then
   wget http://static.pdepend.org/php/latest/pdepend.phar -P $bin
-  chmod +x $pdepend
 fi
 
 # Acquire phpDocumentor.
-if [ ! -f $phpdoc ]; then
+if [ ! -f $bin/phpDocumentor.phar ]; then
   wget http://www.phpdoc.org/phpDocumentor.phar -P $bin
-  chmod +x $phpdoc
+  chmod +x $bin/phpDocumentor.phar
 fi
 
 # Acquire phpmd.phar.
-if [ ! -f $phpmd ]; then
+if [ ! -f $bin/phpmd.phar ]; then
   wget -c http://static.phpmd.org/php/latest/phpmd.phar -P $bin
-  chmod +x $phpmd
 fi
 
 # Acquire phpcb.phar.
-if [ ! -f $phpcb ]; then
+if [ ! -f $bin/phpcb.phar ]; then
   wget -c https://github.com/bytepark/php-phar-qatools/raw/master/phpcb.phar -P $bin
-  chmod +x $phpcb
+fi
+
+# Acquire phpcs.phar.
+if [ ! -f $bin/phpcs.phar ]; then
+  wget -c https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar -P $bin
+fi
+
+if [ ! -f $bin/phpcbf.phar ]; then
+  wget -c https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar -P $bin
 fi
