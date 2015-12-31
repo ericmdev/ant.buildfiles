@@ -3,7 +3,7 @@
 <!-- Set project name, basedir and default target. -->
 <project name="php" basedir="." default="build">
 
-  <!-- Import files. -->
+  <!-- Import targets. -->
   <import file="php/clean.xml"></import>
   <import file="php/lint.xml"></import>
   <import file="php/pdepend.xml"></import>
