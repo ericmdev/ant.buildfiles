@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <target name="phpcpd" description="Find duplicate code using PHPCPD">
+  <target name="phpcpd" description="Find duplicate code using PHPCPD.">
     <exec executable="phpcpd">
       <arg value="--log-pmd" />
       <arg value="${workspace.build}/logs/pmd-cpd.xml" />
