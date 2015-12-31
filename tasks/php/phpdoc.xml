@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
   <target name="phpdoc" description="Generate API documentation using phpDocumentor.">
-    <exec executable="phpdoc">
+    <exec executable="php" failonerror="true">
+      <arg value="${phpdoc.phar}" />
       <arg line="-d '${workspace.src}' -t '${workspace.build}/docs' --title='Tempo' " />
     </exec>
   </target>

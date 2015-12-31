@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <target name="phploc" description="Measure project size using PHPLOC.">
+    <exec executable="phploc" failonerror="false">
+      <arg value="--log-csv" />
+      <arg value="${workspace.build}/logs/phploc.csv" />
+      <arg path="${workspace.src}" />
+    </exec>
+  </target>
+</project>
