@@ -12,6 +12,11 @@ if [ ! -f $bin/phpcb.phar ]; then
   wget -c https://github.com/bytepark/php-phar-qatools/raw/master/phpcb.phar -P $bin
 fi
 
+# Acquire phpcpd.phar.
+if [ ! -f $bin/phpcpd.phar ]; then
+  wget -c https://phar.phpunit.de/phpcpd.phar -P $bin
+fi
+
 # Acquire phpcs.phar.
 if [ ! -f $bin/phpcs.phar ]; then
   wget -c https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar -P $bin
@@ -24,7 +29,6 @@ fi
 # Acquire phpDocumentor.
 if [ ! -f $bin/phpDocumentor.phar ]; then
   wget http://www.phpdoc.org/phpDocumentor.phar -P $bin
-  chmod +x $bin/phpDocumentor.phar
 fi
 
 # Acquire phpmd.phar.
@@ -35,5 +39,4 @@ fi
 # Acquire phpunit.phar.
 if [ ! -f $bin/phpunit.phar ]; then
   wget https://phar.phpunit.de/phpunit.phar -P $bin
-  chmod +x $bin/phpunit.phar
 fi
